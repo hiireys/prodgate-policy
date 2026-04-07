@@ -2,8 +2,13 @@ package prodgate.authz
 
 default permit = false
 
+allow_decision {
+  permit
+  count(deny) == 0
+}
+
 decision := {
-  "allow": permit && count(deny) == 0,
+  "allow": allow_decision,
   "reasons": reasons,
   "service_owner_team": service_owner_team,
 }

@@ -1,7 +1,3 @@
-{
-  "roots": [""],
-  "wasm": [],
-  "metadata": {},
-  "modules": ["authz.rego"],
-  "data": ["data/services.json", "data/users.json"]
-}
+services/data.json
+users/data.json
+authz.rego

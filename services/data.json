@@ -15,8 +15,12 @@
     "owner_team": "data-science-dev",
     "description": "Prediction service for future task and workforce demand"
   },
-    "memorylanes-ui": {
+  "memorylanes-ui": {
     "owner_team": "application-dev",
     "description": "memorylanes-ui is nice looking website for couples"
+  },
+  "memorylanes-service": {
+    "owner_team": "application-dev",
+    "description": "Memorylanes Backend Service"
   }
 }

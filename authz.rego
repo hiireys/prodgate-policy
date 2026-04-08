@@ -37,6 +37,10 @@ valid_action {
   input.action == "approve_release"
 }
 
+valid_action {
+  input.action == "qa_approve"
+}
+
 service_exists {
   data.services[input.resource.service]
 }
@@ -293,6 +297,26 @@ allow {
   count(deny) == 0
   user_is_devops
   input.action == "read_secret"
+}
+
+allow {
+  valid_environment
+  valid_action
+  service_exists
+  count(deny) == 0
+  input.resource.environment == "uat"
+  user_is_qa
+  input.action == "qa_approve"
+}
+
+allow {
+  valid_environment
+  valid_action
+  service_exists
+  count(deny) == 0
+  input.resource.environment == "prod"
+  user_is_qa
+  input.action == "qa_approve"
 }
 
 allow {

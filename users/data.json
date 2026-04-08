@@ -23,16 +23,20 @@
     "team": "release-managers",
     "employment_type": "employee"
   },
-  "qa-rey":{
+  "qa-rey": {
     "team": "qa",
     "employment_type": "employee"
   },
-  "release-rey":{
+  "release-rey": {
     "team": "release-managers",
     "employment_type": "employee"
   },
   "contractor-gina": {
     "team": "application-dev",
     "employment_type": "contractor"
+  },
+  "devops-admin": {
+    "team": "devops",
+    "employment_type": "employee"
   }
 }

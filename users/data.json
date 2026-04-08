@@ -1,0 +1,38 @@
+{
+  "dev-alice": {
+    "team": "application-dev",
+    "employment_type": "employee"
+  },
+  "ds-bob": {
+    "team": "data-science-dev",
+    "employment_type": "employee"
+  },
+  "qa-carol": {
+    "team": "qa",
+    "employment_type": "employee"
+  },
+  "sre-dan": {
+    "team": "sre",
+    "employment_type": "employee"
+  },
+  "devops-erin": {
+    "team": "devops",
+    "employment_type": "employee"
+  },
+  "rm-frank": {
+    "team": "release-managers",
+    "employment_type": "employee"
+  },
+  "qa-rey":{
+    "team": "qa",
+    "employment_type": "employee"
+  },
+  "release-rey":{
+    "team": "release-managers",
+    "employment_type": "employee"
+  },
+  "contractor-gina": {
+    "team": "application-dev",
+    "employment_type": "contractor"
+  }
+}

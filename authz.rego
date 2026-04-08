@@ -329,6 +329,17 @@ allow {
   input.action == "approve_release"
 }
 
+allow {
+  valid_environment
+  valid_action
+  service_exists
+  count(deny) == 0
+  user_is_release_manager
+  input.resource.environment == "uat"
+  input.action == "approve_release"
+  input.context.change_type == "emergency"
+}
+
 reasons = [msg] {
   deny[msg]
 }
